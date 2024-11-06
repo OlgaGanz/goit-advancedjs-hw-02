@@ -29,5 +29,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          user_name: 'Ваше ім’я'  # Наприклад, OlgaGanz
-          user_email: 'Ваш email'  # Наприклад, ganzienko@gmail.com
+          user_name: 'OlgaGanz'  
+          user_email: 'ganzienko@gmail.com'  
