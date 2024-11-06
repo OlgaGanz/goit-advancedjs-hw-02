@@ -27,7 +27,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.PERSONAL_TOKEN }}  # Використання персонального токену
           publish_dir: ./dist
           user_name: 'OlgaGanz'  
-          user_email: 'ganzienko@gmail.com'  
+          user_email: 'ganzienko@gmail.com'
