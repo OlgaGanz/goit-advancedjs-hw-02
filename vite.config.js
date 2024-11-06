@@ -10,6 +10,7 @@ export default defineConfig(({ command }) => {
       [command === 'serve' ? 'global' : '_global']: {},
     },
     root: 'src',
+    base: '/goit-advancedjs-hw-02/',  // Додано базовий шлях для GitHub Pages
     build: {
       sourcemap: true,
       rollupOptions: {
