@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Виконує деплой при пуші в main гілку
+      - main  
 
 jobs:
   deploy:
@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'  # Оновлено до Node.js 20
+          node-version: '20' 
 
       - name: Install Dependencies
         run: npm install
@@ -27,7 +27,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.PERSONAL_TOKEN }}  # Використання персонального токену
+          github_token: ${{ secrets.PERSONAL_TOKEN }}  
           publish_dir: ./dist
           user_name: 'OlgaGanz'  
           user_email: 'ganzienko@gmail.com'
